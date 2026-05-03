@@ -1,42 +1,41 @@
 import Image from "next/image";
-import Link from "next/link";
-import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 const Download: React.FC = () => (
-  <section className="container mx-auto py-24 px-4 md:px-6">
-    <div className="flex flex-col md:flex-row items-center gap-8">
-      <div className="w-full md:w-1/2 order-1 p-4 flex justify-center md:justify-start items-center">
-        <Image
-          src="/products/phone1.png"
-          alt="Financial app interface"
-          width={500}
-          height={500}
-          className="w-1/2 h-auto mx-auto md:mx-0"
-        />
-      </div>
-      <div className="w-full md:w-1/2 order-2 flex justify-center md:justify-end">
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">
-            Download our app
+  <section className="section-padding bg-surface">
+    <div className="container mx-auto px-4">
+      <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+        <div className="w-full md:w-1/2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-body-text mb-4 font-sora font-semibold">
+            Ready to access physical world datasets?
           </h2>
-          <p className="text-xl text-gray-800 dark:text-gray-300 mb-6 font-light">
-            Download the state of the art app and start saving time and money. More to come.
+          <p className="text-xl text-muted-text mb-8 font-light font-inter leading-relaxed">
+            Reach out to discuss your needs. We will share available datasets, pricing, and custom contracting options — no commitment required.
           </p>
-          <div className="flex space-x-4">
-            <Link
-              href="#"
-              className="download-button bg-black dark:bg-white text-white dark:text-black px-5 py-2 rounded-md text-base flex items-center space-x-2 transition-colors duration-200"
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <a
+              href="mailto:contact@banasai.com"
+              className="btn-primary text-center font-inter"
             >
-              <FaApple className="text-2xl" />
-              <span>App Store</span>
-            </Link>
-            <Link
-              href="#"
-              className="download-button bg-black dark:bg-white text-white dark:text-black px-5 py-2 rounded-md text-base flex items-center space-x-2 transition-colors duration-200"
+              Email Us
+              <span className="block text-sm font-light opacity-80 mt-1">contact@banasai.com</span>
+            </a>
+            <a
+              href="tel:+91XXXXXXXXXX"
+              className="btn-secondary text-center font-inter"
             >
-              <FaGooglePlay className="text-2xl" />
-              <span>Google Play</span>
-            </Link>
+              Call Us
+              <span className="block text-sm font-light opacity-80 mt-1">+91 XXXXX XXXXX</span>
+            </a>
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+          <div className="relative w-full aspect-square md:w-[400px] overflow-hidden rounded-card shadow-lg border border-border">
+            <Image 
+              src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&q=80&w=800" 
+              alt="Physical AI and agricultural technology"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

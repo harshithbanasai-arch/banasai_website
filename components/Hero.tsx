@@ -2,25 +2,31 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="text-center my-32 mx-4 sm:mx-8 md:mx-16 lg:mx-24">
-      <h1 className="font-sans text-3xl tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl dark:text-white mb-6">
-        NextJS Template amazing hero!
-      </h1>
-      <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 font-light">
-        Add something about your saas service or app here.
+    <section className="hero-bg text-center py-[80px] md:py-[120px] mx-4 sm:mx-8 md:mx-16 lg:mx-24">
+      <p className="label-text text-primary mb-4 font-dm-mono tracking-widest uppercase">
+        Physical AI Data for Agriculture & Manufacturing
       </p>
-      <div className="flex justify-center space-x-6">
+      <h1 className="font-sora text-5xl tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-body-text mb-6 font-bold">
+        BANAS AI
+      </h1>
+      <h2 className="font-sora text-2xl tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-muted-text mb-8 font-semibold max-w-4xl mx-auto">
+        Ground-Truth Data from the Real World
+      </h2>
+      <p className="text-xl text-muted-text mb-12 font-light font-inter max-w-4xl mx-auto leading-relaxed">
+        Built by farming experts with real-world skills and expertise, Physical AI researchers, and professional software engineers — Banas AI delivers datasets that reflect how agriculture and manufacturing actually work.
+      </p>
+      <div className="flex justify-center space-x-6 flex-wrap gap-4">
         <Link
-          href="/get-started"
-          className="bg-black text-white dark:bg-white dark:text-black px-5 py-2 rounded-md text-base font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition duration-300"
+          href="/#datasets"
+          className="btn-primary text-base font-inter"
         >
-          Get Started
+          Explore Our Datasets
         </Link>
         <Link
-          href="https://github.com"
-          className="bg-black text-white dark:bg-white dark:text-black px-5 py-2 rounded-md text-base font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 transition duration-300"
+          href="/contact"
+          className="btn-secondary text-base font-inter"
         >
-          Download
+          Talk to Our Team
         </Link>
       </div>
     </section>

@@ -15,45 +15,44 @@ interface ReviewsProps {
 const defaultReviews: ReviewData[] = [
   {
     rating: 5,
-    title: "Best app ever!",
-    content:
-      "This app has been a game-changer for me! It's made tracking my daily activities so much easier. I love how intuitive and user-friendly it is.",
-    author: "Jonas Aly",
-    designation: "Founder @ Company",
+    title: "Finding structured agricultural datasets from Indian field conditions was nearly impossible. Banas AI delivered clean, well-labelled data that went straight into our training pipeline.",
+    content: "",
+    author: "AI Research Lead",
+    designation: "Agri-tech Startup, India",
   },
   {
     rating: 5,
-    title: "Super helpful to stay organized",
-    content:
-      "I can't thank this app enough for helping me stay on top of my tasks. The reminders have saved me from missing important deadlines, and I'm much more organized now.",
-    author: "Mark Bures",
-    designation: "Businessman",
+    title: "We contracted them for a custom soil sensing dataset across three regions. They understood our model's requirements from day one and delivered on time and to spec.",
+    content: "",
+    author: "ML Engineer",
+    designation: "Robotics Company",
   },
   {
     rating: 5,
-    title: "Great app that saves time",
-    content:
-      "The app's integration with my other tools is seamless. I can easily check my progress and activities without having to switch between multiple platforms.",
-    author: "William Kolas",
-    designation: "Student",
+    title: "Most data vendors don't understand what physical AI actually needs. The Banas AI team does — they think about the model, not just the spreadsheet.",
+    content: "",
+    author: "CTO",
+    designation: "Manufacturing Automation Firm",
   },
   {
-    rating: 4,
-    title: "Seriously life changing app!",
-    content:
-      "The insights and reports have been eye-opening. I now have a better understanding of my habits and can make adjustments to improve my productivity.",
-    author: "Andrew Chan",
-    designation: "Manager @ AB Company",
+    rating: 5,
+    title: "Indian manufacturing data at this quality level simply didn't exist before. This is the kind of ground-truth dataset that makes a measurable difference in model performance.",
+    content: "",
+    author: "Data Scientist",
+    designation: "Industrial AI Team",
   },
 ];
 
 const Reviews: React.FC<ReviewsProps> = ({ reviews = defaultReviews }) => {
   return (
-    <section className="py-24 bg-gray-50 dark:bg-gray-900">
+    <section className="section-padding bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 text-gray-900 dark:text-white">
-          A beautiful reviews section
+        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center mb-4 text-body-text font-sora font-semibold">
+          What partners say about working with us
         </h2>
+        <p className="text-xl text-center text-muted-text font-light mb-12 max-w-3xl mx-auto italic font-inter">
+          &ldquo;What separates Banas AI is the combination — people who know Indian farming at a cellular level, and an AI team that knows exactly what a model needs to learn from it.&rdquo;
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8">
           {reviews.map((review, index) => (
             <Review key={index} {...review} />
