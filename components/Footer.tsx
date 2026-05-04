@@ -25,8 +25,8 @@ const Footer = () => {
             <Link href="/contact" className="hover:text-primary transition-colors text-sm">
               Contact
             </Link>
-            <a href="mailto:contact@banasai.com" className="hover:text-primary transition-colors text-sm">
-              contact@banasai.com
+            <a href="mailto:contact.banasai@gmail.com" className="hover:text-primary transition-colors text-sm">
+              contact.banasai@gmail.com
             </a>
           </div>
           <div className="flex space-x-4">

@@ -13,18 +13,11 @@ const Download: React.FC = () => (
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a
-              href="mailto:contact@banasai.com"
+              href="mailto:contact.banasai@gmail.com"
               className="btn-primary text-center font-inter"
             >
               Email Us
-              <span className="block text-sm font-light opacity-80 mt-1">contact@banasai.com</span>
-            </a>
-            <a
-              href="tel:+91XXXXXXXXXX"
-              className="btn-secondary text-center font-inter"
-            >
-              Call Us
-              <span className="block text-sm font-light opacity-80 mt-1">+91 XXXXX XXXXX</span>
+              <span className="block text-sm font-light opacity-80 mt-1">contact.banasai@gmail.com</span>
             </a>
           </div>
         </div>

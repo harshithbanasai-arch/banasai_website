@@ -107,7 +107,7 @@ const defaultAccordionItems = [
     title: "How do I get access to your datasets?",
     content: (
       <p>
-        Contact us at <a href="mailto:contact@banasai.com" className="text-primary hover:underline">contact@banasai.com</a> or call us directly. We will discuss your specific requirements, share details of available datasets like KarnatakaPalm-500, and scope any custom collection work if needed.
+        Contact us at <a href="mailto:contact.banasai@gmail.com" className="text-primary hover:underline">contact.banasai@gmail.com</a>. We will discuss your specific requirements, share details of available datasets like KarnatakaPalm-500, and scope any custom collection work if needed.
       </p>
     ),
   },

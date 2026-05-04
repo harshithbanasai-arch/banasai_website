@@ -18,13 +18,29 @@ export default function ContactPage() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     
-    // In production, you would use a service like Formspree or your own backend
-    // For now, we simulate a successful submission
-    setSubmitted(true);
-    console.log("Form submitted:", formData);
-    
-    // To make this functional, you can use:
-    // fetch("https://formspree.io/f/YOUR_ID", { method: "POST", ... })
+    try {
+      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          interest: formData.interest,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again or email us directly.");
+      }
+    } catch (error) {
+      alert("Something went wrong. Please try again or email us directly.");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -55,15 +71,9 @@ export default function ContactPage() {
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-lg font-semibold text-body-text mb-2 font-sora">Email</h2>
-                    <a href="mailto:contact@banasai.com" className="text-muted-text hover:text-primary transition-colors font-inter">
-                      contact@banasai.com
-                    </a>
-                  </div>
-                  <div>
-                    <h2 className="text-lg font-semibold text-body-text mb-2 font-sora">Phone</h2>
-                    <a href="tel:+91XXXXXXXXXX" className="text-muted-text hover:text-primary transition-colors font-inter">
-                      +91 XXXXX XXXXX
-                    </a>
+            <a href="mailto:contact.banasai@gmail.com" className="text-muted-text hover:text-primary transition-colors font-inter">
+              contact.banasai@gmail.com
+            </a>
                   </div>
                   <div>
                     <h2 className="text-lg font-semibold text-body-text mb-2 font-sora">Locations</h2>
