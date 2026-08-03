@@ -6,9 +6,9 @@ import Section from "components/Section";
 import Footer from "components/Footer";
 import Customers from "components/Customers";
 import Accordion from "components/Accordion";
-import Reviews from "components/Reviews";
 import Download from "components/Download";
 import About from "components/About";
+import Products from "components/Products";
 
 export default function Page() {
   return (
@@ -16,6 +16,7 @@ export default function Page() {
       <Header />
       <main>
         <Hero />
+        <Products />
         <Features />
         <Section
           leftHalf={
@@ -59,7 +60,7 @@ export default function Page() {
                 Common Questions
               </h2>
               <p className="text-xl font-light text-muted-text font-inter">
-                Find answers to frequently asked questions about our datasets, services, and team.
+                Answers about Banas Intelligence, Physical AI, our data, and our team.
               </p>
             </div>
           }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AiOutlineFacebook, AiOutlineX, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineX, AiOutlineLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 text-center md:text-left">
             <p className="text-lg font-semibold text-body-text font-sora">Banas AI</p>
-            <p className="text-sm mt-1 font-inter">Physical AI Data for Agriculture & Manufacturing</p>
+            <p className="text-sm mt-1 font-inter">Banas Intelligence &amp; Physical AI</p>
             <p className="text-xs mt-2 text-muted-text font-inter">
               Rooted in the real world. Built for Physical AI. Operating between Dublin, Karnataka (Bengaluru) and the fields.
             </p>
@@ -22,17 +22,17 @@ const Footer = () => {
             <Link href="/#datasets" className="hover:text-primary transition-colors text-sm">
               Datasets
             </Link>
+            <a href="https://banas-intel-api-1007077428197.asia-south1.run.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-sm">
+              Banas Intelligence
+            </a>
             <Link href="/contact" className="hover:text-primary transition-colors text-sm">
               Contact
             </Link>
-            <a href="mailto:contact.banasai@gmail.com" className="hover:text-primary transition-colors text-sm">
-              contact.banasai@gmail.com
+            <a href="mailto:contact@banas-ai.com" className="hover:text-primary transition-colors text-sm">
+              contact@banas-ai.com
             </a>
           </div>
           <div className="flex space-x-4">
-            <a href="#" aria-label="Facebook" className="hover:text-primary transition-colors">
-              <AiOutlineFacebook className="w-5 h-5" />
-            </a>
             <a href="https://www.linkedin.com/company/banasai/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
               <AiOutlineLinkedin className="w-5 h-5" />
             </a>

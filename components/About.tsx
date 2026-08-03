@@ -23,7 +23,8 @@ const About: React.FC = () => {
               The result is something rare: a dataset company where farming expertise, AI research, and software engineering all work from the same vision — to deliver ground-truth data that reflects how agriculture and manufacturing actually work in the real world.
             </p>
             <p className="italic text-muted-text font-inter">
-              Our work today in data collection and AI tooling is laying the foundation for the next stage of Physical AI development in agriculture and manufacturing.
+              That same ground truth powers Banas Intelligence — our agentic forecasting system for
+              agriculture — and lays the foundation for the physical devices still to come.
             </p>
           </div>
         </div>

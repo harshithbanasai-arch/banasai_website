@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
+// For now the live product is the Cloud Run deployment; switch to https://intel.banas-ai.com/ when live.
+const INTEL_URL = "https://banas-intel-api-1007077428197.asia-south1.run.app/";
+
 interface AccordionItemProps {
   title: string;
   content: React.ReactNode;
@@ -36,78 +39,87 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, isOpen, t
 
 const defaultAccordionItems = [
   {
-    title: "What types of datasets do you provide?",
+    title: "What is Banas Intelligence?",
+    content: (
+      <div className="space-y-3">
+        <p>
+          <strong>Banas Intelligence</strong> is an agentic system that forecasts the real world and
+          turns it into clear, actionable decisions. It reads many real-world sources at once — not
+          a single number — and weighs them together to predict what is coming.
+        </p>
+        <p>
+          The first Banas Intelligence system is built for <strong>agriculture intelligence</strong>:
+          live now for arecanut, and expanding to more commodities. Explore it live at{" "}
+          <a href={INTEL_URL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            the live Banas Intelligence app
+          </a>
+          .
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "What does “considers many things as input” mean?",
     content: (
       <p>
-        We are specialists in providing high-quality <strong>ecocentric agricultural datasets</strong>. This is our primary focus — collecting and curating data from real-world farming environments including soil composition, crop health, machine telemetry, and process telemetry. All our datasets are field-collected by experts, cleaned, validated, and structured specifically for AI and robotics training pipelines.
+        Most forecasts lean on one signal. Banas Intelligence blends many at once —{" "}
+        <strong>weather, water, market arrivals, news, policy, trade flows, price trends, and
+        seasonal cycles</strong>. The agentic system reads all of them, weighs what matters right
+        now, and produces one forecast and one decision. That is what makes it intelligence, not
+        just a price ticker.
       </p>
     ),
   },
   {
-    title: "Tell us about the KarnatakaPalm-500 project.",
+    title: "What is Physical AI at Banas?",
     content: (
-      <div className="space-y-4">
-        <p>
-          KarnatakaPalm-500 is one of our flagship collection projects, consisting of two specialized tracks designed for advanced AI training:
-        </p>
-        <div>
-          <h4 className="font-semibold text-body-text mb-1">Track A: Coconut scene dataset + harvest demonstrations</h4>
-          <ul className="list-disc ml-5 space-y-1">
-            <li><strong>Target:</strong> 300 episodes</li>
-            <li><strong>Type:</strong> Embodied scene capture — RGB-D + overhead RGB</li>
-            <li><strong>Details:</strong> Captures coconut bunches on trees across various ripeness stages, occlusion conditions, viewpoints, and lighting conditions.</li>
-            <li><strong>Primary buyers:</strong> Robotics foundation model companies, crop insurance companies, and agri-input multinationals.</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-body-text mb-1">Track B: Arecanut harvest demonstrations</h4>
-          <ul className="list-disc ml-5 space-y-1">
-            <li><strong>Target:</strong> 200 episodes</li>
-            <li><strong>Type:</strong> Egocentric manipulation demonstrations — RGB-D + IMU + language</li>
-            <li><strong>Details:</strong> Captures expert hand-harvest motions from approach to separation, accompanied by Kannada language narration.</li>
-            <li><strong>Primary buyers:</strong> Companies like Physical Intelligence (π), 1X Technologies, and Skild AI training dexterous manipulation models.</li>
-          </ul>
-        </div>
-      </div>
+      <p>
+        Physical AI is the hardware-and-data side of Banas. Today we take on{" "}
+        <strong>data contracts</strong> — collecting and delivering ground-truth data from the real
+        world. On top of that data, our <strong>physical AI models are being trained now</strong>,
+        with <strong>physical devices</strong> on the future roadmap to bring it all into the field.
+      </p>
+    ),
+  },
+  {
+    title: "What commodities does Banas Intelligence cover?",
+    content: (
+      <p>
+        Banas Intelligence is live now for <strong>arecanut</strong>. Agriculture is our first
+        domain, and we are expanding to more commodities over time — each one added as its own
+        intelligence, trained on the same multi-source approach.
+      </p>
+    ),
+  },
+  {
+    title: "What kinds of data do you collect?",
+    content: (
+      <p>
+        We collect and deliver ground-truth data from real farms and production floors — soil, crop
+        health, machine and process telemetry, and more. Every dataset is gathered by farming
+        experts who have worked the land, then cleaned and structured for AI and robotics.
+      </p>
     ),
   },
   {
     title: "Where is your team based?",
     content: (
       <p>
-        We operate across multiple locations to bridge the gap between AI research and the real world. Our field data teams are embedded in farming communities across diverse agricultural regions, bringing deep expertise to every collection project. Our Physical AI and technical team are based in <strong>Dublin and Karnataka (Bengaluru)</strong>.
+        Our field teams are embedded in farming communities across agricultural regions. Our Physical
+        AI and engineering teams are based in <strong>Dublin and Karnataka (Bengaluru)</strong>.
       </p>
     ),
   },
   {
-    title: "What makes your agricultural data different?",
+    title: "How do I register my interest or get access?",
     content: (
       <p>
-        Our data is collected by <strong>farming experts with real-world skills</strong> — people who have lived and worked the land for generations. Unlike contracted surveyors, our team understands the nuances of the environment, seasonal variations, and subtle ground truth cues. This expertise ensures that the data we provide reflects real-world complexities that models need to master.
-      </p>
-    ),
-  },
-  {
-    title: "Are your datasets specific to regional conditions?",
-    content: (
-      <p>
-        Yes, capturing real-world diversity is our core advantage. Our data reflects specific agricultural regions, crop varieties, soil types, and factory floor environments that global or synthetic datasets simply cannot replicate. This is critical for AI systems designed to operate reliably in physical environments.
-      </p>
-    ),
-  },
-  {
-    title: "Who are your datasets best suited for?",
-    content: (
-      <p>
-        Our datasets are purpose-built for AI research teams, robotics companies building foundation models, agri-tech startups, and any organization training models that need a deep understanding of physical world interactions and dexterous manipulation.
-      </p>
-    ),
-  },
-  {
-    title: "How do I get access to your datasets?",
-    content: (
-      <p>
-        Contact us at <a href="mailto:contact.banasai@gmail.com" className="text-primary hover:underline">contact.banasai@gmail.com</a>. We will discuss your specific requirements, share details of available datasets like KarnatakaPalm-500, and scope any custom collection work if needed.
+        Use the <a href="/contact" className="text-primary hover:underline">contact form</a> to
+        register your interest in Banas Intelligence or a data contract, or email us at{" "}
+        <a href="mailto:contact@banas-ai.com" className="text-primary hover:underline">
+          contact@banas-ai.com
+        </a>
+        . We will come back to you.
       </p>
     ),
   },

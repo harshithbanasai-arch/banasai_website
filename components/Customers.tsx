@@ -29,13 +29,13 @@ const Customers: React.FC = () => {
             Trusted by AI and robotics teams building real-world systems
           </h2>
           <p className="text-xl text-gray-300 font-light mb-8 max-w-2xl font-inter">
-            Reach out to discuss your dataset requirements, custom contracting, or access to existing datasets.
+            Register your interest in Banas Intelligence, or talk to us about a data contract.
           </p>
           <Link
             href="/contact"
             className="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-gray-100 transition-colors duration-200 mb-12 font-inter"
           >
-            Contact Us
+            Register Your Interest
           </Link>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
             {benefits.map(({ Icon, title, body }, index) => (

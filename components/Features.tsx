@@ -1,44 +1,44 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
-import { FaLeaf, FaIndustry, FaFlask, FaHandshake, FaMicrochip, FaMapMarkerAlt } from "react-icons/fa";
+import { FaBrain, FaLeaf, FaIndustry, FaHandshake, FaMicrochip, FaMapMarkerAlt } from "react-icons/fa";
 
 const Features = () => {
   const features = [
     {
-      icon: FaLeaf,
-      title: "Ecocentric & Agricultural Datasets",
+      icon: FaBrain,
+      title: "Banas Intelligence",
       description:
-        "Structured datasets collected from real farming environments — soil composition, crop health, pH levels, irrigation patterns, and seasonal variation. Cleaned, labelled, and ready for model training.",
+        "All the different information — weather, water, market arrivals, news, policy, trade flows, price trends, and seasonal cycles — is integrated into one intelligence layer, turning raw data sources into forecasts and decisions.",
+    },
+    {
+      icon: FaLeaf,
+      title: "Agricultural Datasets",
+      description:
+        "Ground-truth data from real farms — soil, crop health, irrigation, and seasonal variation — collected by people who have worked the land, and structured for AI training.",
     },
     {
       icon: FaIndustry,
-      title: "Manufacturing Process Data",
+      title: "Manufacturing Data",
       description:
-        "Operational data from production floors — machine states, defect patterns, process telemetry, and quality control metrics. Designed for industrial AI and automation training pipelines.",
-    },
-    {
-      icon: FaFlask,
-      title: "pH & Soil AI Detection",
-      description:
-        "We built a mobile AI tool for instant pH detection in soil and water, currently used in agricultural settings. Our datasets include real sensor readings collected using this tool — ground-truth data, not estimates.",
+        "Operational data from production floors — machine states, defect patterns, and process telemetry — built for industrial AI and automation.",
     },
     {
       icon: FaHandshake,
-      title: "Custom Data Contracting",
+      title: "Custom Data Contracts",
       description:
-        "Need data collected for a specific crop, region, process type, or sensor configuration? We take on custom contracting projects — scoping, collecting in the field, and delivering clean structured output.",
+        "Tell us the crop, region, process, or sensor setup you need. We scope it, collect it in the field, and deliver clean, structured data.",
     },
     {
       icon: FaMicrochip,
       title: "Physical AI Expertise",
       description:
-        "Our Dublin-based AI team understands how physical systems behave and what models need to learn from real-world data. Every dataset we produce is designed with the training pipeline in mind, not just data storage.",
+        "Models trained for the physical world, grounded in real ground truth — with physical devices on the roadmap to bring it all into the field.",
     },
     {
       icon: FaMapMarkerAlt,
       title: "Region-Specific Coverage",
       description:
-        "Our datasets reflect real-world conditions — regional crop varieties, local manufacturing setups, seasonal variation, and field-level ground truth that global or synthetic datasets simply cannot replicate.",
+        "Real regional conditions — local crop varieties, soils, seasons, and field-level ground truth — that global or synthetic datasets simply cannot replicate.",
     },
   ];
 
@@ -49,10 +49,10 @@ const Features = () => {
           <div className="text-center mb-12">
             <p className="label-text text-primary mb-3 font-dm-mono">What We Offer</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-body-text mb-4 font-sora font-semibold">
-              Data and AI expertise, purpose-built for the real world
+              Intelligence built on ground-truth data
             </h2>
             <p className="mt-6 text-xl text-muted-text font-light font-inter max-w-3xl mx-auto leading-relaxed">
-              We collect, curate, and deliver physical world datasets — and build AI tools — for teams training the next generation of AI and robotics systems.
+              We turn real-world data into intelligence — Banas Intelligence integrates every signal into one forecasting layer — and we collect, curate, and deliver that ground-truth data for teams building the next generation of AI and robotics.
             </p>
           </div>
           <div className="mt-10">
