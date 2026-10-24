@@ -12,6 +12,11 @@ export const faqItems: { question: string; answer: string }[] = [
       "Yes. It is free for farmers, traders and processors. We want to build a community around it and let that community decide which commodities we add next.",
   },
   {
+    question: "How do I join the Banas community?",
+    answer:
+      "Join our free WhatsApp community for arecanut growers. Members get market updates, crop care tips and news on government schemes, and can ask questions and help each other.",
+  },
+  {
     question: "What physical AI products are you building?",
     answer:
       "An ecosystem of three products: Banas Grading for produce lines (pilots open now), Banas Dehusking for arecanut processors (in development), and Banas Farm Manager, a ground robot for routine farm work (coming later).",
