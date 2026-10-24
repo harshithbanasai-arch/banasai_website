@@ -44,6 +44,14 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <Link
+                href="/blog"
+                className="text-sm text-body-text px-4 py-2 rounded-button hover:bg-background transition-colors font-inter"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
               <a
                 href="https://banas-intel-api-1007077428197.asia-south1.run.app/"
                 target="_blank"
