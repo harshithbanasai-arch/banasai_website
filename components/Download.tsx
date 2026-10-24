@@ -13,12 +13,12 @@ const Download: React.FC = () => (
             Ready to work with Banas AI?
           </h2>
           <p className="text-xl text-muted-text mb-8 font-light font-inter leading-relaxed">
-            Register your interest in Banas Intelligence, talk to us about a data contract, or
-            explore the live product. Either way, we&apos;ll come back to you fast.
+            Join the waitlist for grading, dehusking or the farm manager robot, or start using
+            Banas Intelligence free today.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Link href="/contact" className="btn-primary text-center font-inter">
-              Register Your Interest
+              Join the Waitlist
             </Link>
             <a
               href={INTEL_URL}
@@ -26,7 +26,7 @@ const Download: React.FC = () => (
               rel="noopener noreferrer"
               className="btn-secondary text-center font-inter"
             >
-              Explore Banas Intelligence
+              Use Banas Intelligence free
             </a>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Download: React.FC = () => (
           <div className="relative w-full aspect-square md:w-[400px] overflow-hidden rounded-card shadow-lg border border-border">
             <Image
               src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&q=80&w=800"
-              alt="Physical AI and agricultural technology"
+              alt="Fresh produce in a field"
               fill
               className="object-cover"
             />

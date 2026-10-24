@@ -1,0 +1,10 @@
+# Banas AI
+
+> Banas AI is a family agri-tech company working between Dublin, Ireland and Karnataka, India. It runs Banas Intelligence, a free forecasting tool for the arecanut community that blends weather, market arrivals, news, policy and price trends into one forecast. It is also building a physical AI ecosystem for farms and processing lines: Banas Grading (pilots open with growers, packers and processors in Ireland, the UK and India), Banas Dehusking for arecanut processors (in development) and the Banas Farm Manager robot (coming later). Each physical AI product has a waitlist.
+
+Contact: contact@banas-ai.com
+
+## Key pages
+- [Home](https://www.banas-ai.com/): Banas Intelligence and the physical AI ecosystem
+- [Join the waitlist](https://www.banas-ai.com/contact)
+- [Banas Intelligence (free, live)](https://banas-intel-api-1007077428197.asia-south1.run.app/)

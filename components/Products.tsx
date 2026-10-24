@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaBrain, FaMicrochip, FaArrowRight } from "react-icons/fa";
+import { FaBrain, FaCamera, FaCogs, FaRobot, FaArrowRight } from "react-icons/fa";
 
 // For now the live product is the Cloud Run deployment; switch to https://intel.banas-ai.com/ when live.
 const INTEL_URL = "https://banas-intel-api-1007077428197.asia-south1.run.app/";
@@ -21,10 +21,10 @@ type Product = {
 const products: Product[] = [
   {
     icon: FaBrain,
-    tag: "Live",
+    tag: "Free · Live",
     name: "Banas Intelligence",
-    tagline: "Intelligence that considers many things as input",
-    body: "An agentic system that reads the whole real-world picture — not one number — and forecasts what is coming, then turns it into a clear decision. The first system is built for agriculture intelligence: live now for arecanut, and expanding to more commodities.",
+    tagline: "Free market intelligence for the arecanut community",
+    body: "An agentic system that reads the whole real-world picture, not one number, and forecasts where the arecanut market is heading. It is free for farmers, traders and processors, and we are building a community around it.",
     signals: [
       "Weather",
       "Water",
@@ -36,27 +36,55 @@ const products: Product[] = [
       "Seasonal",
     ],
     points: [
-      "Prediction & forecasting powered by an agentic system",
-      "Many real-world sources blended into one forecast and one decision",
-      "First system live for agriculture — arecanut now, more commodities coming",
+      "Free to use, live now for arecanut",
+      "Many real-world sources blended into one forecast",
+      "More commodities coming, shaped by the community",
     ],
     href: INTEL_URL,
     external: true,
-    cta: "Explore Banas Intelligence",
+    cta: "Use Banas Intelligence free",
   },
   {
-    icon: FaMicrochip,
-    tag: "Core",
-    name: "Physical AI",
-    tagline: "Ground-truth data, trained models, and the devices to come",
-    body: "We take on data contracts, collect ground truth from the real world, and deliver it. On top of that data, our physical AI models are being trained today — with physical devices in the future pipeline to bring it all into the field.",
+    icon: FaCamera,
+    tag: "Pilots open",
+    name: "Banas Grading",
+    tagline: "AI grading for produce lines",
+    body: "Consistent grading on your line, without relying on people checking by eye. Built first for mushroom growers, produce packers and arecanut processors.",
     points: [
-      "Data contracts — taken on, collected, and delivered",
-      "Physical AI models being trained now",
-      "Physical devices on the future roadmap",
+      "Every item checked, not a sample",
+      "A clear quality record for each lot",
+      "Early pilots with a small group of growers and processors",
     ],
-    href: "/#datasets",
-    cta: "Explore our data",
+    href: "/contact?interest=grading",
+    cta: "Join the grading waitlist",
+  },
+  {
+    icon: FaCogs,
+    tag: "In development",
+    name: "Banas Dehusking",
+    tagline: "Clean nuts, without the damage",
+    body: "A machine for arecanut processors that takes the husk and fibre off without cracking or scuffing the nut, so more of every batch sells at the top grade.",
+    points: [
+      "Built with processors in Karnataka",
+      "Designed for fresh nuts",
+      "Waitlist members see it first",
+    ],
+    href: "/contact?interest=dehusking",
+    cta: "Join the dehusking waitlist",
+  },
+  {
+    icon: FaRobot,
+    tag: "Coming later",
+    name: "Banas Farm Manager",
+    tagline: "A robot that helps run the farm",
+    body: "The next step in the Banas ecosystem: a ground robot that takes on routine work around the farm and reports what it sees, so growers spend less time on repetitive jobs.",
+    points: [
+      "Part of one ecosystem with grading and dehusking",
+      "Designed with farming families",
+      "Join the watch list for updates",
+    ],
+    href: "/contact?interest=farm-manager",
+    cta: "Join the watch list",
   },
 ];
 
@@ -68,12 +96,12 @@ const Products: React.FC = () => {
           <div className="text-center mb-12">
             <p className="label-text text-primary mb-3 font-dm-mono">What We Build</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-body-text mb-4 font-sora font-semibold">
-              Banas Intelligence and Physical AI
+              One ecosystem, from market to machine
             </h2>
             <p className="mt-6 text-xl text-muted-text font-light font-inter max-w-3xl mx-auto leading-relaxed">
-              One company, two pillars. Banas Intelligence forecasts the real world with an agentic
-              system. Physical AI grounds it in ground-truth data, models being trained today, and
-              the devices of tomorrow.
+              Banas Intelligence is free for the community. Our physical AI products, grading,
+              dehusking and the farm manager robot, are rolling out one by one. Join the waitlist
+              for the ones you want first.
             </p>
           </div>
 

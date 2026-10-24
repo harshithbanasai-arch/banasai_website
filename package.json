@@ -1,7 +1,7 @@
 {
   "name": "banas-ai-website",
   "version": "1.0.0",
-  "description": "Banas AI Website — Physical AI Data for Agriculture & Manufacturing",
+  "description": "Banas AI website: camera grading for produce lines and Banas Intelligence",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
