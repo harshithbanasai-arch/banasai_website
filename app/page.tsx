@@ -9,10 +9,25 @@ import Accordion from "components/Accordion";
 import Download from "components/Download";
 import About from "components/About";
 import Products from "components/Products";
+import { faqItems } from "components/faq";
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map(({ question, answer }) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
+};
 
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
       <main>
         <Hero />
@@ -22,17 +37,14 @@ export default function Page() {
           leftHalf={
             <>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-body-text mb-4 font-sora font-semibold">
-                The expertise gap most AI data companies miss
+                Built by people who work the land
               </h2>
               <div className="space-y-4 text-lg text-muted-text font-light font-inter">
                 <p className="leading-relaxed">
-                  Most data vendors treat agriculture and manufacturing as categories on a form. We treat them as domains we have lived in for generations.
+                  Farm and processing machines usually come from engineers who have never worked a harvest. Our family has grown and sold produce for generations, so we start from the real job and the real cost.
                 </p>
                 <p className="leading-relaxed">
-                  Our agricultural roots run deep — our team consists of farming experts with deep real-world skills and expertise across diverse agricultural regions. We know which soil conditions matter by season, how crop stress looks in the field before it shows up in a sensor reading, and how farming practice varies across regions in ways that dramatically affect what an AI model needs to learn.
-                </p>
-                <p className="leading-relaxed">
-                  Our Physical AI team in Dublin brings the technical rigour — understanding not just how to collect data, but how models consume it, what failure modes look like, and how to structure datasets that generalise well to real-world deployment. Our professional software engineers build the pipelines and tooling that make everything production-ready. Together, we bridge the gap between the field and the model.
+                  Our team in Dublin builds the AI and software. Our team in Karnataka builds and tests on real farms and lines. Nothing ships until it works there.
                 </p>
               </div>
             </>
@@ -42,7 +54,7 @@ export default function Page() {
               <div className="relative w-full aspect-square md:w-[450px] overflow-hidden rounded-card shadow-lg border border-border">
                 <Image 
                   src="/products/pi_image_1.png" 
-                  alt="Physical AI and drone technology in agricultural fields"
+                  alt="Banas AI field technology"
                   fill
                   className="object-cover"
                 />
@@ -60,7 +72,7 @@ export default function Page() {
                 Common Questions
               </h2>
               <p className="text-xl font-light text-muted-text font-inter">
-                Answers about Banas Intelligence, Physical AI, our data, and our team.
+                Answers about Banas Intelligence, our physical AI products, the waitlist and our team.
               </p>
             </div>
           }

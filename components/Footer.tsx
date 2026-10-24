@@ -12,15 +12,15 @@ const Footer = () => {
             <p className="text-lg font-semibold text-body-text font-sora">Banas AI</p>
             <p className="text-sm mt-1 font-inter">Banas Intelligence &amp; Physical AI</p>
             <p className="text-xs mt-2 text-muted-text font-inter">
-              Rooted in the real world. Built for Physical AI. Operating between Dublin, Karnataka (Bengaluru) and the fields.
+              Rooted in farming. Operating between Dublin and Karnataka (Bengaluru).
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 mb-4 md:mb-0 font-inter">
             <Link href="/" className="hover:text-primary transition-colors text-sm">
               Home
             </Link>
-            <Link href="/#datasets" className="hover:text-primary transition-colors text-sm">
-              Datasets
+            <Link href="/#ecosystem" className="hover:text-primary transition-colors text-sm">
+              Ecosystem
             </Link>
             <a href="https://banas-intel-api-1007077428197.asia-south1.run.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-sm">
               Banas Intelligence

@@ -14,7 +14,7 @@ export default function Hero() {
       >
         <span className="label-text text-xs text-green-secondary font-dm-mono">Now Live</span>
         <span className="text-sm text-body-text font-inter">
-          Banas Intelligence is live — explore it
+          Banas Intelligence is live and free
         </span>
       </a>
       <p className="label-text text-primary mb-4 font-dm-mono tracking-widest uppercase">
@@ -24,14 +24,13 @@ export default function Hero() {
         BANAS AI
       </h1>
       <h2 className="font-sora text-2xl tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-muted-text mb-8 font-semibold max-w-4xl mx-auto">
-        Real-world intelligence that predicts, forecasts, and acts
+        Free market intelligence, and physical AI for the farm and the line
       </h2>
       <p className="text-xl text-muted-text mb-12 font-light font-inter max-w-4xl mx-auto leading-relaxed">
-        Banas AI builds two things.{" "}
-        <strong className="text-body-text font-medium">Banas Intelligence</strong> — an agentic
-        system that reads many real-world sources at once and forecasts what is coming, starting
-        with agriculture. And <strong className="text-body-text font-medium">Physical AI</strong> —
-        ground-truth data, trained models, and the physical devices that bring it all together.
+        <strong className="text-body-text font-medium">Banas Intelligence</strong> forecasts the
+        arecanut market from many real-world sources, free for the whole community. Our{" "}
+        <strong className="text-body-text font-medium">physical AI</strong> ecosystem starts with
+        grading, then dehusking, then a farm manager robot.
       </p>
       <div className="flex justify-center space-x-6 flex-wrap gap-4">
         <a
@@ -40,10 +39,10 @@ export default function Hero() {
           rel="noopener noreferrer"
           className="btn-primary text-base font-inter"
         >
-          Explore Banas Intelligence
+          Use Banas Intelligence free
         </a>
         <Link href="/contact" className="btn-secondary text-base font-inter">
-          Register Your Interest
+          Join the Waitlist
         </Link>
       </div>
     </section>

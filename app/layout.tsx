@@ -11,11 +11,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Banas AI — Banas Intelligence & Physical AI for the Real World",
+    default: "Banas AI: free arecanut intelligence and physical AI",
     template: "%s | Banas AI",
   },
   description:
-    "Banas AI builds Banas Intelligence — agentic forecasting that integrates many real-world signals into decisions — plus Physical AI ground-truth data, trained models and devices.",
+    "Free arecanut market forecasts with Banas Intelligence, plus physical AI for farms and produce lines: grading, dehusking and a farm robot.",
   applicationName: "Banas AI",
   authors: [{ name: "Banas AI" }],
   creator: "Banas AI",
@@ -23,16 +23,14 @@ export const metadata: Metadata = {
   keywords: [
     "Banas AI",
     "Banas Intelligence",
-    "Physical AI",
-    "agriculture intelligence",
-    "agentic AI",
-    "arecanut price forecasting",
-    "commodity forecasting",
-    "commodity market intelligence",
-    "agricultural datasets",
-    "ground-truth data",
-    "AI for agriculture",
-    "agritech India",
+    "arecanut price forecast",
+    "free arecanut market intelligence",
+    "AI produce grading",
+    "mushroom grading",
+    "arecanut grading",
+    "arecanut dehusking machine",
+    "farm robot",
+    "physical AI agriculture",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -40,23 +38,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Banas AI",
-    title: "Banas AI — Banas Intelligence & Physical AI",
+    title: "Banas AI: free arecanut intelligence and physical AI",
     description:
-      "Agentic intelligence that forecasts the real world by reading many sources at once, starting with agriculture. Plus ground-truth data, models in training, and physical devices on the roadmap.",
+      "Banas Intelligence is free for the arecanut community. Our physical AI ecosystem starts with grading, then dehusking and a farm manager robot. Join the waitlist.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Banas AI — Banas Intelligence & Physical AI",
+        alt: "Banas AI: Banas Intelligence and physical AI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Banas AI — Banas Intelligence & Physical AI",
+    title: "Banas AI: free arecanut intelligence and physical AI",
     description:
-      "Agentic intelligence that forecasts the real world, starting with agriculture.",
+      "Free arecanut forecasts, plus physical AI for grading, dehusking and farm work.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -84,14 +82,16 @@ const organizationJsonLd = {
   url: SITE_URL,
   logo: `${SITE_URL}/banas_logo.jpg`,
   description:
-    "Banas AI builds Banas Intelligence — agentic forecasting for agriculture and commodities — and Physical AI: ground-truth data, trained models, and physical devices.",
+    "Banas AI runs Banas Intelligence, a free agentic forecasting tool for the arecanut community, and is building a physical AI ecosystem for farms and produce lines: Banas Grading (pilots with growers, packers and processors in Ireland, the UK and India), Banas Dehusking for arecanut processors, and the Banas Farm Manager robot.",
   email: "contact@banas-ai.com",
   knowsAbout: [
-    "Agriculture Intelligence",
-    "Arecanut Market Forecasting",
+    "Arecanut market forecasting",
+    "Produce grading",
+    "Arecanut dehusking",
+    "Agricultural robotics",
     "Physical AI",
-    "Ground-Truth Data Collection",
   ],
+  areaServed: ["IE", "GB", "IN"],
   sameAs: ["https://www.linkedin.com/company/banasai/", "https://x.com/banas_ai"],
 };
 

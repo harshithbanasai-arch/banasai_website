@@ -5,18 +5,18 @@ import { FaSeedling, FaBrain, FaCogs } from "react-icons/fa";
 const benefits = [
   {
     Icon: FaSeedling,
-    title: "Generational Agricultural Roots",
-    body: "Our field data is collected and validated by farming families with deep, multi-generational experience across Indian agricultural regions — not by contracted surveyors.",
+    title: "Growers Ourselves",
+    body: "Our family grows and sells produce, so the system is built around what buyers actually reject, not what looks good in a demo.",
   },
   {
     Icon: FaBrain,
-    title: "Physical AI Research Expertise",
-    body: "Our Dublin-based AI researchers ensure every dataset is structured for how physical AI models actually learn — not just how data is typically stored or sold.",
+    title: "AI Built in Dublin",
+    body: "Our AI and software team in Dublin builds every product, working hand in hand with our field team in Karnataka.",
   },
   {
     Icon: FaCogs,
-    title: "End-to-End Engineering",
-    body: "Professional software engineers build and maintain our data pipelines and delivery systems — so you receive clean, structured, production-ready datasets every time.",
+    title: "Tested on Real Farms",
+    body: "Every product is tested on real farms and processing lines before it is sold, and waitlist members get the first pilots.",
   },
 ];
 
@@ -26,16 +26,16 @@ const Customers: React.FC = () => {
       <div className="w-full px-4 md:px-8 lg:px-16">
         <div className="flex flex-col items-center justify-center max-w-7xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white font-sora">
-            Trusted by AI and robotics teams building real-world systems
+            Built with farmers, growers and processors
           </h2>
           <p className="text-xl text-gray-300 font-light mb-8 max-w-2xl font-inter">
-            Register your interest in Banas Intelligence, or talk to us about a data contract.
+            Join the waitlist and help shape what we build next.
           </p>
           <Link
             href="/contact"
             className="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-gray-100 transition-colors duration-200 mb-12 font-inter"
           >
-            Register Your Interest
+            Join the Waitlist
           </Link>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
             {benefits.map(({ Icon, title, body }, index) => (

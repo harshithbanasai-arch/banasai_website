@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import Header from "components/Header";
 import Footer from "components/Footer";
 
@@ -16,16 +16,33 @@ const FORM_ENDPOINT =
 
 type Status = "idle" | "posted" | "email";
 
+// `key` matches the ?interest= query value used by links across the site.
+const INTERESTS = [
+  { key: "grading", value: "Waitlist: Banas Grading", label: "Waitlist: Banas Grading (produce lines)" },
+  { key: "dehusking", value: "Waitlist: Banas Dehusking", label: "Waitlist: Banas Dehusking (arecanut)" },
+  { key: "farm-manager", value: "Watch list: Banas Farm Manager", label: "Watch list: Banas Farm Manager robot" },
+  { key: "intelligence", value: "Banas Intelligence community", label: "Banas Intelligence (free community)" },
+  { key: "partnership", value: "Partnership", label: "Partnership or reselling" },
+  { key: "general", value: "General Enquiry", label: "General enquiry" },
+];
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    interest: "Banas Intelligence",
+    interest: INTERESTS[0].value,
     message: "",
   });
 
   const [status, setStatus] = useState<Status>("idle");
+
+  // Preselect the product when arriving from a "Join the waitlist" link.
+  useEffect(() => {
+    const key = new URLSearchParams(window.location.search).get("interest");
+    const match = INTERESTS.find((i) => i.key === key);
+    if (match) setFormData((f) => ({ ...f, interest: match.value }));
+  }, []);
 
   const openMailto = () => {
     const subject = `Banas AI — ${formData.interest || "Enquiry"}${
@@ -86,11 +103,11 @@ export default function ContactPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-body-text mb-6 font-sora font-semibold">
-                  Register your interest
+                  Join the waitlist
                 </h1>
                 <p className="text-xl text-muted-text font-light max-w-3xl mx-auto font-inter">
-                  Tell us what you are interested in — Banas Intelligence, a data
-                  contract, or a general conversation — and we will get back to you.
+                  Pick the product you want first: grading, dehusking or the farm manager robot.
+                  Waitlist members hear first and get first access to pilots.
                 </p>
               </div>
 
@@ -210,18 +227,11 @@ export default function ContactPage() {
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-button border border-border bg-surface text-body-text focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors font-inter"
                         >
-                          <option value="Banas Intelligence">
-                            Banas Intelligence (Agriculture / Arecanut)
-                          </option>
-                          <option value="Custom Data Contracting">
-                            Custom Data Contracting
-                          </option>
-                          <option value="Existing Datasets">
-                            Existing Datasets
-                          </option>
-                          <option value="Physical AI Models">
-                            Physical AI Models
-                          </option>
+                          {INTERESTS.map(({ value, label }) => (
+                            <option key={value} value={value}>
+                              {label}
+                            </option>
+                          ))}
                           <option value="General Enquiry">General Enquiry</option>
                         </select>
                       </div>

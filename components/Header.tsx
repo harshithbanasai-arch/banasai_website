@@ -37,10 +37,10 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="/#datasets"
+                href="/#ecosystem"
                 className="text-sm text-body-text px-4 py-2 rounded-button hover:bg-background transition-colors font-inter"
               >
-                Datasets
+                Ecosystem
               </Link>
             </li>
             <li>

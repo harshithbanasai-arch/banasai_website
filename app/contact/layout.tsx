@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact & Register Interest",
+  title: "Join the Waitlist",
   description:
-    "Register your interest in Banas Intelligence or a ground-truth data contract. Email contact@banas-ai.com or send a message — we'll get back to you.",
+    "Join the waitlist for Banas Grading, Banas Dehusking or the Banas Farm Manager robot, or get in touch at contact@banas-ai.com.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact & Register Interest | Banas AI",
-    description: "Register your interest in Banas Intelligence or a data contract.",
+    title: "Join the Waitlist | Banas AI",
+    description: "Join the waitlist for Banas Grading, Dehusking or the Farm Manager robot.",
   },
 };
 
