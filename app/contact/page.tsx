@@ -7,7 +7,7 @@ import Footer from "components/Footer";
 const CONTACT_EMAIL = "contact@banas-ai.com";
 
 // Where form submissions are sent. Defaults to FormSubmit's AJAX endpoint,
-// which forwards to CONTACT_EMAIL with no signup or backend — just a one-time
+// which forwards to CONTACT_EMAIL with no signup or backend, just a one-time
 // confirmation email the first time it is used. Override with a Formspree (or
 // any JSON-accepting) endpoint via NEXT_PUBLIC_FORM_ENDPOINT if preferred.
 const FORM_ENDPOINT =
@@ -45,8 +45,8 @@ export default function ContactPage() {
   }, []);
 
   const openMailto = () => {
-    const subject = `Banas AI — ${formData.interest || "Enquiry"}${
-      formData.company ? ` — ${formData.company}` : ""
+    const subject = `Banas AI: ${formData.interest || "Enquiry"}${
+      formData.company ? `, ${formData.company}` : ""
     }`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nInterest: ${formData.interest}\n\n${formData.message}`;
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
@@ -67,7 +67,7 @@ export default function ContactPage() {
         },
         body: JSON.stringify({
           ...formData,
-          _subject: `Banas AI — ${formData.interest}`,
+          _subject: `Banas AI: ${formData.interest}`,
           _template: "table",
         }),
       });
@@ -78,7 +78,7 @@ export default function ContactPage() {
         openMailto();
       }
     } catch (error) {
-      // Network/backend failure — fall back to the visitor's own email client.
+      // Network/backend failure: fall back to the visitor's own email client.
       openMailto();
     }
   };
@@ -138,7 +138,7 @@ export default function ContactPage() {
                       Response time
                     </h2>
                     <p className="text-muted-text font-inter">
-                      We typically reply within 1–2 business days.
+                      We typically reply within one or two business days.
                     </p>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                       </h3>
                       <p className="text-muted-text font-inter">
                         {status === "posted"
-                          ? "Thank you for reaching out. We will get back to you soon."
+                          ? "Thanks, we got your message and will reply soon."
                           : "Your email client should have opened with your message ready to send. If it did not, email us directly at contact@banas-ai.com."}
                       </p>
                     </div>
@@ -250,7 +250,7 @@ export default function ContactPage() {
                           required
                           rows={4}
                           className="w-full px-4 py-3 rounded-button border border-border bg-surface text-body-text focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none font-inter"
-                          placeholder="Tell us about your project or requirements..."
+                          placeholder="Tell us what you need"
                         />
                       </div>
                       <button

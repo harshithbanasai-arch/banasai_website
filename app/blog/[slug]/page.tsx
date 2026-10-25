@@ -5,6 +5,7 @@ import Header from "components/Header";
 import Footer from "components/Footer";
 import PostBody from "components/blog/PostBody";
 import { formatDate, getPost, getPosts, imageUrl } from "components/blog/api";
+import { WHATSAPP_COMMUNITY_URL } from "components/community";
 
 // Must be a literal for Next.js; keep in step with BLOG_REVALIDATE.
 export const revalidate = 300;
@@ -85,13 +86,18 @@ export default async function PostPage({ params }: Params) {
             <PostBody value={post.body ?? []} />
           </div>
           <div className="card mt-16">
-            <p className="font-sora text-lg font-semibold text-primary">Get early access to Banas physical AI</p>
+            <p className="font-sora text-lg font-semibold text-primary">Join the Banas growers&apos; community</p>
             <p className="mt-2 text-muted-text">
-              Join the waitlist for Banas Grading, Dehusking and the Farm Manager, or use Banas Intelligence free.
+              Market updates, crop care tips and scheme news, shared free on WhatsApp.
             </p>
-            <Link href="/contact" className="btn-primary mt-6 inline-block">
-              Join the Waitlist
-            </Link>
+            <a
+              href={WHATSAPP_COMMUNITY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-6 inline-block"
+            >
+              Join on WhatsApp
+            </a>
           </div>
         </article>
       </main>
