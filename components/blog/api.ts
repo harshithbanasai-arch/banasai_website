@@ -4,7 +4,9 @@ import type { PortableTextBlock } from "@portabletext/react";
 // which holds only Banas posts, so no per-site filter is needed.
 // Reads go through Sanity's public CDN API, so no token is needed and the
 // site rebuilds nothing when a post is published: pages revalidate below.
-const PROJECT_ID = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+// The project ID is public (it is in every API URL), so it lives here rather than
+// in a Vercel env var; NEXT_PUBLIC_SANITY_PROJECT_ID still overrides it.
+const PROJECT_ID = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "m56ychw7";
 const DATASET = process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production";
 const API_VERSION = "2025-02-19";
 
