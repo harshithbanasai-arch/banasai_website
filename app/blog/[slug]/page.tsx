@@ -62,30 +62,32 @@ export default async function PostPage({ params }: Params) {
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="section-padding bg-background">
-        <article className="mx-auto max-w-3xl px-6">
+        <article className="mx-auto max-w-3xl px-4 sm:px-8">
           <Link href="/blog" className="text-sm text-muted-text hover:text-primary">
             ← All posts
           </Link>
-          <p className="mt-8 font-dm-mono text-xs uppercase tracking-wider text-muted-text">
-            {formatDate(post.publishedAt)}
-            {post.author && ` · ${post.author.name}`}
-          </p>
-          <h1 className="mt-3 font-sora text-3xl font-bold leading-tight text-primary md:text-5xl">{post.title}</h1>
-          <p className="mt-5 text-xl leading-relaxed text-muted-text">{post.excerpt}</p>
-          {post.cover?.url && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={imageUrl(post.cover.url, 1440)}
-              alt={post.cover.alt ?? ""}
-              width={post.cover.width}
-              height={post.cover.height}
-              className="mt-10 h-auto w-full rounded-card"
-            />
-          )}
-          <div className="mt-6">
-            <PostBody value={post.body ?? []} />
+          <div className="mt-6 rounded-card border border-border bg-white px-5 py-8 sm:px-10 sm:py-12 md:px-14">
+            <p className="font-dm-mono text-xs uppercase tracking-wider text-muted-text">
+              {formatDate(post.publishedAt)}
+              {post.author && ` · ${post.author.name}`}
+            </p>
+            <h1 className="mt-3 font-sora text-3xl font-bold leading-tight text-primary md:text-5xl">{post.title}</h1>
+            <p className="mt-5 text-xl leading-relaxed text-muted-text">{post.excerpt}</p>
+            {post.cover?.url && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={imageUrl(post.cover.url, 1440)}
+                alt={post.cover.alt ?? ""}
+                width={post.cover.width}
+                height={post.cover.height}
+                className="mt-10 h-auto w-full rounded-card"
+              />
+            )}
+            <div className="mt-6">
+              <PostBody value={post.body ?? []} />
+            </div>
           </div>
-          <div className="card mt-16">
+          <div className="card mt-10 p-6 sm:p-10">
             <p className="font-sora text-lg font-semibold text-primary">Join the Banas growers&apos; community</p>
             <p className="mt-2 text-muted-text">
               Market updates, crop care tips and scheme news, shared free on WhatsApp.
