@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 // Production origin. Update if the site is served from a different domain.
 const SITE_URL = "https://www.banas-ai.com";
@@ -112,6 +113,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-background text-body-text min-h-screen font-inter">
         {children}
+        <Analytics />
       </body>
     </html>
   );

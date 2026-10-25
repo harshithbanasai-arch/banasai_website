@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { AiOutlineX, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineX, AiOutlineLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
+import { WHATSAPP_COMMUNITY_URL } from "./community";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,6 +26,9 @@ const Footer = () => {
             <a href="https://banas-intel-api-1007077428197.asia-south1.run.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-sm">
               Banas Intelligence
             </a>
+            <a href={WHATSAPP_COMMUNITY_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-sm">
+              Community
+            </a>
             <Link href="/contact" className="hover:text-primary transition-colors text-sm">
               Contact
             </Link>
@@ -33,6 +37,9 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex space-x-4">
+            <a href={WHATSAPP_COMMUNITY_URL} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp community" className="hover:text-primary transition-colors">
+              <AiOutlineWhatsApp className="w-5 h-5" />
+            </a>
             <a href="https://www.linkedin.com/company/banasai/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
               <AiOutlineLinkedin className="w-5 h-5" />
             </a>

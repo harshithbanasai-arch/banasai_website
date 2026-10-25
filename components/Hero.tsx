@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WHATSAPP_COMMUNITY_URL } from "./community";
 
 // For now the live product is the Cloud Run deployment; switch to https://intel.banas-ai.com/ when live.
 const INTEL_URL = "https://banas-intel-api-1007077428197.asia-south1.run.app/";
@@ -40,6 +41,14 @@ export default function Hero() {
           className="btn-primary text-base font-inter"
         >
           Use Banas Intelligence free
+        </a>
+        <a
+          href={WHATSAPP_COMMUNITY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-secondary text-base font-inter"
+        >
+          Join our WhatsApp community
         </a>
         <Link href="/contact" className="btn-secondary text-base font-inter">
           Join the Waitlist

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { WHATSAPP_COMMUNITY_URL } from "./community";
 
 export default function Header() {
   return (
@@ -44,6 +45,14 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <Link
+                href="/blog"
+                className="text-sm text-body-text px-4 py-2 rounded-button hover:bg-background transition-colors font-inter"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
               <a
                 href="https://banas-intel-api-1007077428197.asia-south1.run.app/"
                 target="_blank"
@@ -51,6 +60,16 @@ export default function Header() {
                 className="text-sm text-body-text px-4 py-2 rounded-button hover:bg-background transition-colors font-inter"
               >
                 Banas Intelligence
+              </a>
+            </li>
+            <li>
+              <a
+                href={WHATSAPP_COMMUNITY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-body-text px-4 py-2 rounded-button hover:bg-background transition-colors font-inter"
+              >
+                Community
               </a>
             </li>
             <li>
