@@ -7,7 +7,7 @@ export default function Header() {
     <header className="bg-white border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-y-3">
         <div className="flex items-center">
-          <Link href="/" aria-label="Banas AI — home">
+          <Link href="/" aria-label="Banas AI home">
             <Image
               src="/banas_logo.jpg"
               alt="Banas AI"

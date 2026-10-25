@@ -24,7 +24,7 @@ const products: Product[] = [
     tag: "Free · Live",
     name: "Banas Intelligence",
     tagline: "Free market intelligence for the arecanut community",
-    body: "An agentic system that reads the whole real-world picture, not one number, and forecasts where the arecanut market is heading. It is free for farmers, traders and processors, and we are building a community around it.",
+    body: "Forecasts where the arecanut market is heading, using weather, arrivals, news, policy and trade data. Free for farmers, traders and processors.",
     signals: [
       "Weather",
       "Water",
@@ -37,7 +37,7 @@ const products: Product[] = [
     ],
     points: [
       "Free to use, live now for arecanut",
-      "Many real-world sources blended into one forecast",
+      "One forecast from many data sources",
       "More commodities coming, shaped by the community",
     ],
     href: INTEL_URL,
@@ -49,7 +49,7 @@ const products: Product[] = [
     tag: "Pilots open",
     name: "Banas Grading",
     tagline: "AI grading for produce lines",
-    body: "Consistent grading on your line, without relying on people checking by eye. Built first for mushroom growers, produce packers and arecanut processors.",
+    body: "Grades every item on your line the same way, every shift. Built first for mushroom growers, produce packers and arecanut processors.",
     points: [
       "Every item checked, not a sample",
       "A clear quality record for each lot",
@@ -77,9 +77,9 @@ const products: Product[] = [
     tag: "Coming later",
     name: "Banas Farm Manager",
     tagline: "A robot that helps run the farm",
-    body: "The next step in the Banas ecosystem: a ground robot that takes on routine work around the farm and reports what it sees, so growers spend less time on repetitive jobs.",
+    body: "A ground robot that does routine work around the farm and reports what it sees, so growers spend less time on repetitive jobs.",
     points: [
-      "Part of one ecosystem with grading and dehusking",
+      "Works alongside grading and dehusking",
       "Designed with farming families",
       "Join the watch list for updates",
     ],
@@ -90,18 +90,16 @@ const products: Product[] = [
 
 const Products: React.FC = () => {
   return (
-    <section id="products" className="section-padding bg-surface">
+    <section id="ecosystem" className="section-padding bg-surface">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <p className="label-text text-primary mb-3 font-dm-mono">What We Build</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-body-text mb-4 font-sora font-semibold">
-              One ecosystem, from market to machine
+              What we build
             </h2>
             <p className="mt-6 text-xl text-muted-text font-light font-inter max-w-3xl mx-auto leading-relaxed">
-              Banas Intelligence is free for the community. Our physical AI products, grading,
-              dehusking and the farm manager robot, are rolling out one by one. Join the waitlist
-              for the ones you want first.
+              Banas Intelligence is free and live today. Grading, dehusking and the farm manager
+              robot follow, one at a time. Join the waitlist for the ones you want.
             </p>
           </div>
 
