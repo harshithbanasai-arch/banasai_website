@@ -15,23 +15,19 @@ export default function Hero() {
       >
         <span className="label-text text-xs text-green-secondary font-dm-mono">Now Live</span>
         <span className="text-sm text-body-text font-inter">
-          Banas Intelligence is live and free
+          Banas Intelligence is free to use
         </span>
       </a>
-      <p className="label-text text-primary mb-4 font-dm-mono tracking-widest uppercase">
-        Banas Intelligence &amp; Physical AI
-      </p>
       <h1 className="font-sora text-5xl tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-body-text mb-6 font-bold">
         BANAS AI
       </h1>
       <h2 className="font-sora text-2xl tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-muted-text mb-8 font-semibold max-w-4xl mx-auto">
-        Free market intelligence, and physical AI for the farm and the line
+        Market forecasts for arecanut growers, and machines for the hardest farm work
       </h2>
       <p className="text-xl text-muted-text mb-12 font-light font-inter max-w-4xl mx-auto leading-relaxed">
-        <strong className="text-body-text font-medium">Banas Intelligence</strong> forecasts the
-        arecanut market from many real-world sources, free for the whole community. Our{" "}
-        <strong className="text-body-text font-medium">physical AI</strong> ecosystem starts with
-        grading, then dehusking, then a farm manager robot.
+        <strong className="text-body-text font-medium">Banas Intelligence</strong> is our free arecanut
+        market forecast. We are also building machines for farms and processing lines, starting
+        with grading, then dehusking, then a farm manager robot.
       </p>
       <div className="flex justify-center space-x-6 flex-wrap gap-4">
         <a

@@ -10,7 +10,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Field notes from Banas AI: arecanut markets, Banas Intelligence forecasts, and the physical AI we are building for farms and produce lines.",
+    "Tips, market updates and news for arecanut growers, from the Banas AI community.",
   alternates: { canonical: "/blog" },
 };
 
@@ -23,7 +23,7 @@ export default async function BlogPage() {
       <main className="section-padding bg-background">
         <div className="mx-auto max-w-6xl px-6">
           <p className="label-text">Blog</p>
-          <h1 className="mt-3 max-w-3xl font-sora text-4xl font-bold text-primary md:text-5xl">Field notes from Banas AI</h1>
+          <h1 className="mt-3 max-w-3xl font-sora text-4xl font-bold text-primary md:text-5xl">Notes for arecanut growers</h1>
           <p className="mt-5 max-w-2xl text-lg text-muted-text">
             Arecanut markets, what Banas Intelligence is seeing, and the physical AI we are building with farmers.
           </p>
