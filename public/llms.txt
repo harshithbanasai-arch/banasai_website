@@ -7,6 +7,6 @@ Contact: contact@banas-ai.com
 ## Key pages
 - [Home](https://www.banas-ai.com/): Banas Intelligence and the physical AI ecosystem
 - [Join the waitlist](https://www.banas-ai.com/contact)
-- [Blog](https://www.banas-ai.com/blog): tips, market updates and news for arecanut growers
+- [Blog](https://www.banas-ai.com/blog): market updates, crop care tips and farming news for growers
 - [WhatsApp community](https://chat.whatsapp.com/GAuaa0HqSunK6XFjJfhA2u): free growers' community
 - [Banas Intelligence (free, live)](https://banas-intel-api-1007077428197.asia-south1.run.app/)
