@@ -20,6 +20,8 @@ type Product = {
   name: string;
   href: string;
   external?: boolean;
+  // Optional English-only page with more detail, shown under the card on English pages.
+  more?: { href: string; label: string };
   copy: Record<Lang, ProductCopy>;
 };
 
@@ -60,6 +62,7 @@ const products: Product[] = [
     icon: FaCamera,
     name: "Banas Grading",
     href: "/contact?interest=grading",
+    more: { href: "/arecanut-sorting", label: "Arecanut sorting after dehusking" },
     copy: {
       en: {
         tag: "Pilots open",
@@ -177,7 +180,7 @@ const Products: React.FC<{ lang?: Lang }> = ({ lang = "en" }) => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
-            {products.map(({ icon: Icon, name, href, external, copy }) => {
+            {products.map(({ icon: Icon, name, href, external, more, copy }) => {
               const { tag, tagline, body, signals, points, cta } = copy[lang];
               return (
                 <div key={name} className="card p-8 flex flex-col bg-background">
@@ -240,6 +243,11 @@ const Products: React.FC<{ lang?: Lang }> = ({ lang = "en" }) => {
                     >
                       {cta}
                       <FaArrowRight size={13} />
+                    </Link>
+                  )}
+                  {more && lang === "en" && (
+                    <Link href={more.href} className="mt-3 text-sm text-muted-text font-inter underline hover:text-primary w-fit">
+                      {more.label}
                     </Link>
                   )}
                 </div>

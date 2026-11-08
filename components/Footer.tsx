@@ -72,7 +72,7 @@ const Footer = ({ lang = "en" }: { lang?: Lang }) => {
           </div>
         </div>
         <div className="mt-6 pt-6 border-t border-border text-center text-sm font-inter">
-          <p>&copy; {currentYear} Banas AI. {t.rights}</p>
+          <p>&copy; {currentYear} Banas Intelligence Private Limited (Banas AI). {t.rights}</p>
         </div>
       </div>
     </footer>
