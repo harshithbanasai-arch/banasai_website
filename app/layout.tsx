@@ -80,6 +80,8 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Banas AI",
+  legalName: "Banas Intelligence Private Limited",
+  alternateName: ["Banas Intelligence", "Banas"],
   url: SITE_URL,
   logo: `${SITE_URL}/banas_logo.jpg`,
   description:
