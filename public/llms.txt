@@ -1,6 +1,6 @@
 # Banas AI
 
-> Banas AI (registered as Banas Intelligence Private Limited, Karnataka) is an agri business building AI grading machines in India, with development in Dublin, Ireland. It runs Banas Intelligence, a free forecasting tool for the arecanut community that blends weather, market arrivals, news, policy and price trends into one forecast. It is also building a physical AI ecosystem for farms and processing lines: Banas Grading (pilots open with growers, packers and processors in Ireland, the UK and India), Banas Dehusking for arecanut processors (in development) and the Banas Farm Manager robot (coming later). Each physical AI product has a waitlist.
+> Banas AI (registered as Banas Intelligence Private Limited, Karnataka) is an end-to-end agri business that combines software and physical AI. It builds AI grading machines in India, with development in Dublin, Ireland. It runs Banas Intelligence, a free forecasting tool for the arecanut community that blends weather, market arrivals, news, policy and price trends into one forecast. It is also building a physical AI ecosystem for farms and processing lines: Banas Grading (pilots open with growers, packers and processors in Ireland, the UK and India), Banas Dehusking for arecanut processors (in development) and the Banas Farm Manager robot (coming later). Each physical AI product has a waitlist.
 
 Contact: contact@banas-ai.com
 

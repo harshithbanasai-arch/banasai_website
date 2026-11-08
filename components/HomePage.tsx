@@ -12,7 +12,7 @@ const COPY = {
   en: {
     aboutHeading: "Built by people who work the land",
     about: [
-      "Banas AI is a family company. We have grown and traded arecanut in Karnataka for generations, so we know how graders decide, what a wrong grade costs, and how little good information reaches the farmer.",
+      "Banas AI is an end-to-end agri business: software and physical AI working together. Banas Intelligence helps growers and traders decide when to sell, and our machines take on the hand work on farms and processing lines. Our team comes from arecanut farming and trading in Karnataka, so we know how graders decide, what a wrong grade costs, and how little good information reaches the farmer.",
       "Our software team is in Dublin and our field team is in Karnataka. We test everything on real farms and processing lines before anyone pays for it.",
     ],
     faqHeading: "Common questions",
@@ -21,7 +21,7 @@ const COPY = {
   kn: {
     aboutHeading: "ಮಣ್ಣಿನಲ್ಲಿ ದುಡಿಯುವವರೇ ಕಟ್ಟಿದ ಸಂಸ್ಥೆ",
     about: [
-      "Banas AI ಒಂದು ಕುಟುಂಬದ ಸಂಸ್ಥೆ. ತಲೆಮಾರುಗಳಿಂದ ನಾವು ಕರ್ನಾಟಕದಲ್ಲಿ ಅಡಿಕೆ ಬೆಳೆದು ವ್ಯಾಪಾರ ಮಾಡುತ್ತಿದ್ದೇವೆ. ಹಾಗಾಗಿ ಗ್ರೇಡ್ ಹೇಗೆ ನಿರ್ಧಾರವಾಗುತ್ತದೆ, ತಪ್ಪು ಗ್ರೇಡ್‌ನಿಂದ ಎಷ್ಟು ನಷ್ಟವಾಗುತ್ತದೆ, ಮತ್ತು ಒಳ್ಳೆಯ ಮಾಹಿತಿ ರೈತನಿಗೆ ಎಷ್ಟು ಕಡಿಮೆ ತಲುಪುತ್ತದೆ ಎಂಬುದು ನಮಗೆ ಗೊತ್ತು.",
+      "Banas AI ಸಾಫ್ಟ್‌ವೇರ್ ಮತ್ತು Physical AI ಎರಡನ್ನೂ ಒಟ್ಟಿಗೆ ತರುವ ಸಂಪೂರ್ಣ ಕೃಷಿ ಉದ್ಯಮ. Banas Intelligence ಬೆಳೆಗಾರರು ಮತ್ತು ವ್ಯಾಪಾರಿಗಳಿಗೆ ಯಾವಾಗ ಮಾರಬೇಕು ಎಂದು ನಿರ್ಧರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ, ನಮ್ಮ ಯಂತ್ರಗಳು ತೋಟ ಮತ್ತು ಸಂಸ್ಕರಣಾ ಘಟಕಗಳ ಕೈಕೆಲಸವನ್ನು ಹಗುರಗೊಳಿಸುತ್ತವೆ. ನಮ್ಮ ತಂಡ ಕರ್ನಾಟಕದ ಅಡಿಕೆ ಕೃಷಿ ಮತ್ತು ವ್ಯಾಪಾರದಿಂದ ಬಂದಿದೆ. ಹಾಗಾಗಿ ಗ್ರೇಡ್ ಹೇಗೆ ನಿರ್ಧಾರವಾಗುತ್ತದೆ, ತಪ್ಪು ಗ್ರೇಡ್‌ನಿಂದ ಎಷ್ಟು ನಷ್ಟವಾಗುತ್ತದೆ, ಮತ್ತು ಒಳ್ಳೆಯ ಮಾಹಿತಿ ರೈತನಿಗೆ ಎಷ್ಟು ಕಡಿಮೆ ತಲುಪುತ್ತದೆ ಎಂಬುದು ನಮಗೆ ಗೊತ್ತು.",
       "ನಮ್ಮ ಸಾಫ್ಟ್‌ವೇರ್ ತಂಡ ಡಬ್ಲಿನ್‌ನಲ್ಲಿದೆ, ಕ್ಷೇತ್ರ ತಂಡ ಕರ್ನಾಟಕದಲ್ಲಿದೆ. ಯಾರಾದರೂ ಹಣ ಕೊಡುವ ಮೊದಲೇ ನಾವು ಎಲ್ಲವನ್ನೂ ನಿಜವಾದ ತೋಟಗಳು ಮತ್ತು ಸಂಸ್ಕರಣಾ ಘಟಕಗಳಲ್ಲಿ ಪರೀಕ್ಷಿಸುತ್ತೇವೆ.",
     ],
     faqHeading: "ಸಾಮಾನ್ಯ ಪ್ರಶ್ನೆಗಳು",
